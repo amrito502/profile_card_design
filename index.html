@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+            margin-top: 60px;
+            display: inline-block;
+            font-family: "Open Sans", serif;
+        }
+
+        .main_card {
+            margin: 0 auto;
+            height: 840px;
+            width: 700px;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: "Open Sans", serif;
+            position: relative;
+            margin-bottom: 100px;
+        }
+
+        .cover_photo_section {
+            position: relative;
+            height: 150px;
+            width: 100%;
+            background-color: #F1F1F1;
+        }
+
+        .profile_photo_section {
+            position: absolute;
+            width: 100%;
+            display: flex !important;
+            align-items: center;
+            top: 116px;
+            font-family: "Open Sans", serif;
+        }
+
+        .profile_photo {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .photo {
+            position: relative;
+            height: 175px;
+            width: 175px;
+            border-radius: 50%;
+            top: -61px;
+            font-family: "Open Sans", serif;
+        }
+
+        .photo_img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 5px solid #d5d5d5;
+        }
+
+
+        .link_profile_btn {
+            text-decoration: none;
+            color: black;
+            padding: 10px 17px;
+            font-size: 15px;
+            border: 2px solid rgb(233, 233, 233);
+            border-radius: 12px;
+            font-family: "Open Sans", serif;
+            font-weight: 600;
+            margin-top: -77px;
+            transition: .4s;
+        }
+
+        .link_profile_btn:hover {
+            background-color: #0e0e0e;
+            color: white;
+        }
+
+        .profile_name_email {
+            margin-top: -61px;
+        }
+
+        .form_section {
+            position: absolute;
+            top: 410px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            font-family: "Open Sans", serif;
+        }
+
+        .profile_name {
+            font-family: "Open Sans", serif;
+            margin-top: 36px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .profile_email {
+            font-family: "Open Sans", serif;
+            margin-top: -6px;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+
+        .input_file_img {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            border: 3px solid #ababab;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="main_card shadow">
+                    <div class="cover_photo_section">
+                        <div class="profile_photo_section">
+                            <div class="profile_photo">
+                                <div>
+                                    <div class="photo">
+                                        <img class="photo_img" src="/profile.jpg" alt="">
+                                    </div>
+                                    <div class="profile_name_email">
+                                        <h4 class="profile_name">Mustafizur Rahman</h4>
+                                        <p class="profile_email">mustafiz@gmail.com</p>
+                                    </div>
+                                </div>
+                                <a class="link_profile_btn" href="">Edit Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form_section">
+                        <form action="" style="width: 89%;">
+                            <div class="input_name_section mb-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label style="font-size: 20px;font-weight: 500;" for="">Name</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control w-100" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input_email_section mb-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label style="font-size: 20px;font-weight: 500;" for="">Email </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="email" class="form-control w-100" value="" id="email"
+                                            placeholder="Email Address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input_contact_number_section mb-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label style="font-size: 20px;font-weight: 500;" for="">Phone </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="number" class="form-control w-100" id="phone"
+                                            placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_username_section mb-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label style="font-size: 20px;font-weight: 500;" for="">Address</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <textarea name="address" class="form-control w-100" placeholder="Address"
+                                            id="address"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_photo_section mb-4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label style="font-size: 20px;font-weight: 500;" for="">Profile Photo</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="file" class="form-control w-100" id="profile_photo"><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_button_section">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="submit" style="float: right;" class="btn btn-dark py-2 px-4 ml-3"
+                                            style="font-size: 16px; font-weight: 500;" id="btn" value="Save Changes">
+                                        <input type="reset" style="float: right;"
+                                            class="btn btn-outline-secondary py-2 px-4 mx-3" id="btn" value="Cancel"
+                                            style="font-size: 16px; font-weight: 500;">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
